@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Bingo.css">
+        <title>Bingo</title>
+    </head>
+
+    <body>
+        
+        <header class="flex-container">
+            <div id="titulo">
+                <h1>Bingo B2 Pf.Otavio</h1>
+                
+            </div>
+            <div id="menu" class="flex-container">
+                <button id="botao-jogar" class="button-accent" onclick="iniciaJogo()"><i class="fa-solid fa-gamepad"></i> Iniciar Jogo</button>
+        
+            </div>
+        </header>
+
+        <main>
+
+            <div id="jogo">
+                <h2>Números sorteados</h2>
+                <div id="numeros-sorteados" class="flex-container"></div>  
+            </div>
+
+            <div id="div-cartelas">
+
+                <div id="cabecalho-cartelas" class="flex-container">
+                    <h2>Cartões</h2>
+                    <div class="flex-container">
+                        <button id="botao-adicionar" class="button-accent" onclick="geraCartela()"><i class="fa-solid fa-plus"></i> Adicionar Cartões</button>
+                        <button id="botao-limpar" class="button-normal" onclick="removeCartelas()"><i class="fa-solid fa-trash"></i> Limpar Cartões</button>
+                    </div>
+                </div>
+
+                <div id="cartelas" class="grid-container"></div>
+
+            </div>
+
+        </main>
+
+         <script src="Bingo.js"></script>
+    </body>
+
+</html>
